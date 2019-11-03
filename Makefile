@@ -163,7 +163,7 @@ QJS_OBJS=$(OBJDIR)/qjs.o $(OBJDIR)/repl.o $(QJS_LIB_OBJS)
 
 QJSBN_OBJS=$(OBJDIR)/qjs.bn.o $(OBJDIR)/repl-bn.bn.o $(OBJDIR)/qjscalc.bn.o $(QJSBN_LIB_OBJS)
 
-LIBS=-lm
+LIBS=-lm -latomic
 ifndef CONFIG_WIN32
 LIBS+=-ldl
 endif
